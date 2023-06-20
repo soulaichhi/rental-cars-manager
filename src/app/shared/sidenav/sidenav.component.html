@@ -1,1 +1,25 @@
-<button color="primary" mat-button>Primary</button>
+<ng-container>
+  <mat-nav-list role="list">
+    <a mat-list-item routerLink="/">
+      <mat-icon matListItemIcon>home</mat-icon>
+      <span>Home</span>
+    </a>
+    <a mat-list-item routerLink="/customers">
+      <mat-icon matListItemIcon>person</mat-icon>
+      <span>Customers</span>
+    </a>
+    <a mat-list-item routerLink="/cars">
+      <mat-icon matListItemIcon>directions_car</mat-icon>
+      <span>Cars</span>
+    </a>
+    <a mat-list-item routerLink="/cars/add-car">
+      <mat-icon matListItemIcon>edit</mat-icon>
+      <span>Add Car</span>
+    </a>
+    <a mat-list-item routerLink="/customers/add-customer">
+      <mat-icon matListItemIcon>local_grocery_store</mat-icon>
+      <span>Add Customer</span>
+    </a>
+  </mat-nav-list>
+
+</ng-container>
