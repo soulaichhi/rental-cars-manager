@@ -6,9 +6,22 @@ import { CarsListComponent } from './cars-list/cars-list.component';
 import { CarFormComponent } from './car-form/car-form.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [CarsListComponent, CarFormComponent],
-  imports: [CommonModule, CarsRoutingModule, MatInputModule, MatTableModule],
+  imports: [
+    CommonModule,
+    CarsRoutingModule,
+    MatInputModule,
+    MatTableModule,
+    MatCardModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatButtonModule,
+  ],
 })
 export class CarsModule {}
