@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [CarsListComponent, CarFormComponent],
@@ -22,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatOptionModule,
     MatSelectModule,
     MatButtonModule,
+    ReactiveFormsModule,
   ],
 })
 export class CarsModule {}
