@@ -15,6 +15,8 @@ import { BlacklistCustomersComponent } from './blacklist-customers/blacklist-cus
 import { BlacklistFormComponent } from './blacklist-form/blacklist-form.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatButtonModule } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatButtonModule,
+    ReactiveFormsModule,
   ],
 })
 export class CustomersModule {}
