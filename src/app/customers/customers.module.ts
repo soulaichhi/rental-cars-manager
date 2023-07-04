@@ -17,6 +17,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CustomersService } from './customers.service';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatNativeDateModule,
     MatButtonModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    MatSlideToggleModule,
   ],
+  providers: [CustomersService],
 })
 export class CustomersModule {}

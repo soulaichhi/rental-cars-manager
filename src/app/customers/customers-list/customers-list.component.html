@@ -3,37 +3,52 @@
   <input #input (keyup)="applyFilter($event)" matInput placeholder="Ex. ium">
 </mat-form-field>
 
-<table [dataSource]="dataSource" class="mat-elevation-z8" mat-table>
+<table [dataSource]="dataSource$" class="mat-elevation-z8" mat-table>
 
   <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <th *matHeaderCellDef mat-header-cell> No.</th>
-    <td *matCellDef="let element" mat-cell> {{element.position}} </td>
+  <ng-container matColumnDef="fullName">
+    <th *matHeaderCellDef mat-header-cell> Nom & Prenom</th>
+    <td *matCellDef="let element" mat-cell> {{element.firstName + ' ' + element.lastName}} </td>
   </ng-container>
 
   <!-- Name Column -->
-  <ng-container matColumnDef="name">
-    <th *matHeaderCellDef mat-header-cell> Name</th>
-    <td *matCellDef="let element" mat-cell> {{element.name}} </td>
+  <ng-container matColumnDef="exitDate">
+    <th *matHeaderCellDef mat-header-cell>Date de sortie</th>
+    <td *matCellDef="let element" mat-cell> {{element.exitDate}} </td>
   </ng-container>
 
   <!-- Weight Column -->
-  <ng-container matColumnDef="weight">
-    <th *matHeaderCellDef mat-header-cell> Weight</th>
-    <td *matCellDef="let element" mat-cell> {{element.weight}} </td>
+  <ng-container matColumnDef="entryDate">
+    <th *matHeaderCellDef mat-header-cell>Date d'entree</th>
+    <td *matCellDef="let element" mat-cell> {{element.entryDate}} </td>
   </ng-container>
 
   <!-- Symbol Column -->
-  <ng-container matColumnDef="symbol">
-    <th *matHeaderCellDef mat-header-cell> Symbol</th>
-    <td *matCellDef="let element" mat-cell> {{element.symbol}} </td>
+  <ng-container matColumnDef="cin">
+    <th *matHeaderCellDef mat-header-cell>C.I.N</th>
+    <td *matCellDef="let element" mat-cell> {{element.cin}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="address">
+    <th *matHeaderCellDef mat-header-cell>Address</th>
+    <td *matCellDef="let element" mat-cell> {{element.address}} </td>
+  </ng-container>
+  <ng-container matColumnDef="phone">
+    <th *matHeaderCellDef mat-header-cell>Phone</th>
+    <td *matCellDef="let element" mat-cell> {{element.phone}} </td>
+  </ng-container>
+  <ng-container matColumnDef="blacklist">
+    <th *matHeaderCellDef mat-header-cell>blacklist</th>
+    <td *matCellDef="let element" mat-cell>
+      <mat-slide-toggle [checked]="element.blacklist"></mat-slide-toggle>
+    </td>
   </ng-container>
 
   <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
   <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
 
   <!-- Row shown when there is no matching data. -->
-  <tr *matNoDataRow class="mat-row">
-    <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
-  </tr>
+  <!--  <tr *matNoDataRow class="mat-row">-->
+  <!--    <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>-->
+  <!--  </tr>-->
 </table>

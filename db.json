@@ -7,7 +7,16 @@
       "birthday": "12/09/1990",
       "phone": "+212634576843",
       "address": "ouled oujih,Kenitra,Morocco",
-      "cin": "JB48964"
+      "cin": "JB48964",
+      "entryDate": "12/12/2023",
+      "exitDate": "10/10/2024",
+      "blacklist": true,
+      "secondDriver": {
+        "firstName": "Soulaimane",
+        "lastName": "Chhibou",
+        "birthDay": "08/10/1994",
+        "cin": "JJ456876"
+      }
     },
     {
       "id": 2,
@@ -16,7 +25,16 @@
       "birthday": "12/09/1985",
       "phone": "+212634576843",
       "address": "ouled oujih,Kenitra,Morocco",
-      "cin": "JB48964"
+      "cin": "JB48964",
+      "entryDate": "12/12/2023",
+      "exitDate": "10/10/2024",
+      "blacklist": false,
+      "secondDriver": {
+        "firstName": "Soulaimane",
+        "lastName": "Chhibou",
+        "birthDay": "08/10/1994",
+        "cin": "JJ456876"
+      }
     },
     {
       "id": 3,
@@ -25,7 +43,16 @@
       "birthday": "12/09/1994",
       "phone": "+212634576843",
       "address": "ouled oujih,Kenitra,Morocco",
-      "cin": "JB48964"
+      "cin": "JB48964",
+      "entryDate": "12/12/2023",
+      "exitDate": "10/10/2024",
+      "blacklist": true,
+      "secondDriver": {
+        "firstName": "Soulaimane",
+        "lastName": "Chhibou",
+        "birthDay": "08/10/1994",
+        "cin": "JJ456876"
+      }
     }
   ],
   "cars": [
