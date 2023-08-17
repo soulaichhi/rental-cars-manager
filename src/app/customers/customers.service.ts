@@ -11,4 +11,8 @@ export class CustomersService {
   customers$ = this.http.get<Customer[]>(basePath);
 
   constructor(private http: HttpClient) {}
+
+  createCustomer(customer: Customer) {
+    return this.http.post<Customer>(basePath, customer);
+  }
 }

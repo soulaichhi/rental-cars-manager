@@ -23,9 +23,17 @@
             <mat-label for="cin">C.I.N</mat-label>
             <input formControlName="cin" id="cin" matInput>
           </mat-form-field>
+          <mat-form-field>
+            <mat-label for="address">Address</mat-label>
+            <input formControlName="address" id="address" matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label for="phone">Phone</mat-label>
+            <input formControlName="phone" id="phone" matInput>
+          </mat-form-field>
         </ng-container>
         <ng-container formGroupName="secondDriver">
-          <h1>Personal Info</h1>
+          <h1>Second Driver</h1>
           <mat-form-field>
             <mat-label>Prenom</mat-label>
             <input formControlName="prenom" matInput>
@@ -56,6 +64,14 @@
           <mat-form-field>
             <mat-label for="modele">Modele</mat-label>
             <input formControlName="modele" id="modele" matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label for="entryDate">Date d'entree</mat-label>
+            <input formControlName="entryDate" id="entryDate" matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label for="exitDate">Date de Sortie</mat-label>
+            <input formControlName="exitDate" id="exitDate" matInput>
           </mat-form-field>
         </ng-container>
       </form>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Customer } from '../customer';
 
 @Component({
   selector: 'app-customer-form',
@@ -18,22 +19,26 @@ export class CustomerFormComponent implements OnInit {
         nom: ['', Validators.required],
         dateNaissance: ['', Validators.required],
         cin: ['', Validators.required],
+        address: ['', Validators.required],
+        phone: ['', Validators.required],
       }),
       secondDriver: this.fb.group({
-        prenom: ['', Validators.required],
-        nom: ['', Validators.required],
-        dateNaissance: ['', Validators.required],
-        cin: ['', Validators.required],
+        prenom: [''],
+        nom: [''],
+        dateNaissance: [''],
+        cin: [''],
       }),
       carInfo: this.fb.group({
         marque: ['', Validators.required],
         immatriculation: ['', Validators.required],
         modele: [2022, Validators.required],
+        entryDate: ['', Validators.required],
+        exitDate: ['', Validators.required],
       }),
     });
   }
 
   submitForm() {
-    console.log(this.rentForm.value);
+    const customer: Customer = {};
   }
 }
