@@ -1,5 +1,12 @@
 
 .example-card {
   max-width: 300px;
+  margin: 15px;
 }
+
+.mdc-card__actions {
+  padding: 8px 30px;
+  column-gap: 15px;
+}
+
 

@@ -11,6 +11,9 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CarsService } from './cars.service';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [CarsListComponent, CarFormComponent],
@@ -24,6 +27,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatButtonModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    MatGridListModule,
   ],
+  providers: [CarsService],
 })
 export class CarsModule {}
